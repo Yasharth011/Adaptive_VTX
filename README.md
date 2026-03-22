@@ -141,6 +141,13 @@ Contrast 15%   SSIM      10%   Blocking  5%
 
 ## Installation
 
+### Ground Station (Laptop)
+```bash
+python3 -m venv .venv
+source .venv/bin/activate 
+pip3 install requirements.txt 
+```
+
 ### ESP32 Firmware
 
 **1. Flash MicroPython** (use the non-SPIRAM build):
@@ -171,13 +178,6 @@ done
 ```bash
 mpremote connect /dev/ttyUSB0 fs ls
 ```
-
-### Ground Station
-
-```bash
-pip install opencv-python numpy scipy rich
-```
-
 ---
 
 ## Running the System
@@ -312,9 +312,4 @@ numpy
 scipy
 rich
 ```
-
 ---
-
-## License
-
-MIT License. See LICENSE file for details.
